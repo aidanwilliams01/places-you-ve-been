@@ -8,3 +8,7 @@ function Place(location, landmarks, time, notes) {
   this.time = time;
   this.notes = notes;
 }
+
+ListOfPlaces.prototype.addPlace = function(place) {
+  this.places[location] = place;
+};
