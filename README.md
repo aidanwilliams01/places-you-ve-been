@@ -6,7 +6,9 @@ Expected Output: ListOfPlaces {places: {…}}
 
 Test: "It should add a place to a list of places"
 Code: listOfPlaces.addPlace(place);
+listOfPlaces.places;
 Expected Output: undefined
+{placeholder: Place}
 
 Describe: Place()
 
