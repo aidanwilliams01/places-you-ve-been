@@ -1,5 +1,6 @@
 function ListOfPlaces() {
   this.places = {};
+  this.currentId = 0;
 }
 
 function Place(placeLocation, landmarks, time, notes) {
@@ -10,5 +11,11 @@ function Place(placeLocation, landmarks, time, notes) {
 }
 
 ListOfPlaces.prototype.addPlace = function(place) {
-  this.places[place.placeLocation] = place;
+  place.id = this.assignId();
+  this.places[place.id] = place;
+};
+
+ListOfPlaces.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
 };
