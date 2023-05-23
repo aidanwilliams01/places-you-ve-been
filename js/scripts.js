@@ -1,0 +1,3 @@
+function ListOfPlaces() {
+  this.places = {};
+}
